@@ -2,7 +2,7 @@
 
 #include <chrono>
 
-double calculate (double x) {
+double calc (double x) {
     return x*x - x*x + x*4 - x*5 + x + x;
 }
 
@@ -12,8 +12,12 @@ int main()
 
 {
     long long n;
-    double res, time;
-    int x = 10;
+    
+    double res;
+    
+    double  time;
+    
+    int x = 5;
 
     while(1)
     {
@@ -24,13 +28,13 @@ int main()
 
         for (long long i =0; i<n; ++i)
         {
-            res = calculate(x);
+            res = calc(x);
         }
 
         clock_t end = clock();
         time = (double)(end - start) / CLOCKS_PER_SEC;
 
-        std::cout <<"time =  "<< time << "\n";
-        std::cout <<"result(x=10) =  "<< res <<std:: endl;
+        std::cout <<"Время =  "<< time << "\n";
+        std::cout <<"Итог =  "<< res <<std:: endl;
     }
 }
