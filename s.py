@@ -1,6 +1,6 @@
 import time
 
-def calculate(x):
+def calc(x):
 
     return x**2 - x**2 + x*4 - x*5 + x + x
 
@@ -20,7 +20,7 @@ def main():
         res = 0
 
         for i in range(n):
-            res = calculate(x)
+            res = calc(x)
             
         end_time = time.time()
         
