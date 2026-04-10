@@ -3,7 +3,7 @@ import time
 def calc(x):
     return x**2 - x**2 + x*4 - x*5 + x + x
 
-x = 10
+x = 5
 
 while 1==1:
     n = input()
