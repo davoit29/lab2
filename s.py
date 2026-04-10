@@ -7,13 +7,13 @@ def calc(x):
 def main():
     x = 10
     
-    while True:
-        user_input = input()
+    while 1==1:
+        n = input()
 
-        if not user_input.isdigit():
+        if not n.isdigit():
             break
         
-        n = int(user_input)
+        n = int(n)
         
         start_time = time.time()
  
@@ -26,7 +26,8 @@ def main():
         
         duration = end_time - start_time
         
-        print(f"time = {duration} s; result(x=10) = {res}")
+        print(f"Время : {duration} s")
+        print(f"Итог : {res}")
 
 if __name__ == "__main__":
     main()
